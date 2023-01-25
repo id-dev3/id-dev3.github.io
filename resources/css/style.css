@@ -98,6 +98,20 @@
 .second-section {
   margin-top: 34px;
 }
+
+@media only screen and (max-width: 440px) {
+  .second-section {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  h2.about-me-1 {
+    font-size: 2rem;
+  }
+  img.my-photo {
+    width: 100%;
+  }
+}
+
 .about-me {
   text-align: center;
 }
@@ -140,7 +154,17 @@
   margin-bottom: 44px;
 }
 
-.section-service, .section-skills, .section-resume {
+@media only screen and (max-width: 440px) {
+  h2.section-service {
+    font-size: 2rem;
+  }
+  .third-section {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+
+.section-service, .section-skills, .section-projects {
   font-size: 2.5rem;
   color: #0E76A8;
   margin-bottom: 34px;
@@ -249,6 +273,12 @@
 }
 
 /********* FOURTH SECTION *********/
+
+@media only screen and (max-width: 440px) {
+  h2.section-projects {
+    font-size: 2rem;
+  }
+}
 
 .fourth-section {
   margin-bottom: 34px;
