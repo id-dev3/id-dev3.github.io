@@ -27,7 +27,7 @@
 /********* FIRST SECTION *********/
 .bgimage {
   height:100vh;
-  background-image: url("/resources/images/background-image.jpg");
+  background-image: url("https://github.com/BlackFury117/personal-website/blob/main/resources/images/background-image.jpg?raw=true");
   background-size:cover;
   position:relative;
 }
