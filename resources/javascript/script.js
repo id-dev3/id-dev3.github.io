@@ -1,6 +1,8 @@
 /// MAIN SECTION ///
 
 // FIRST SECTION
+
+// TYPE EFFECT
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -58,3 +60,29 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+// END TYPE EFFECT
+
+
+// SCROLL EFFECT
+
+const boxes = document.querySelectorAll(".scroll-effect");
+
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+}
+
+// END SCROLL EFFECT

@@ -99,6 +99,19 @@
   margin-top: 34px;
 }
 
+.scroll-effect {
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+.scroll-effect:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.scroll-effect.show {
+  transform: translateX(0);
+}
+
 @media only screen and (max-width: 440px) {
   .second-section {
     margin-left: 8px;
