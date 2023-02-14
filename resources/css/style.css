@@ -24,6 +24,10 @@
 
 /****************** MAIN SECTION ******************/
 
+.main-section {
+  overflow: hidden;
+}
+
 /********* FIRST SECTION *********/
 .bgimage {
   height:100vh;
