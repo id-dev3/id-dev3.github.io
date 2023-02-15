@@ -7,19 +7,42 @@
 /*********** NAVBAR SECTION ***********/
 
 .my-logo {
-  width: 45px;
+  width: 50px;
 }
 
-.nav-item {
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  color: #333333;
+  text-transform: uppercase;
   font-weight: bold;
-  transition: 0.3s;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
 }
 
-.nav-item:hover {
-  background-color: #0e77a892;
-  border-radius: 4px;
-  width: 80px;
-  text-align: center;
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0f84ba;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+ .nav-item {
+  font-weight: bold;
+  font-size: 0.875rem;
 }
 
 /****************** MAIN SECTION ******************/
@@ -47,7 +70,6 @@
 }
 
 .my-text {
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +82,7 @@
     font-size: 3rem;
   }
   a.typewrite {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   div.images-container img.skill-icon {
     width: 30px;
@@ -72,11 +94,11 @@
   background-color: #0e77a892;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 500;
   display: table;
   margin: auto;
-  padding: 7px;
+  padding: 0.438rem;
   letter-spacing: 0;
 }
 
@@ -118,8 +140,8 @@
 
 @media only screen and (max-width: 440px) {
   .second-section {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
   h2.about-me-1 {
     font-size: 2rem;
@@ -136,7 +158,7 @@
 .about-me-1 {
   font-size: 2.5rem;
   color: #0E76A8;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .my-photo {
@@ -144,22 +166,17 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.social-media-icon {
-  width: 40px;
-  margin: 8px;
+  margin-bottom: 1.25rem;
 }
 
 .text {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   color: rgb(97, 96, 96);
 }
 
 .hashtag {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #0E76A8;
   font-weight: bold;
 }
@@ -167,8 +184,8 @@
 /********* THIRD SECTION *********/
 
 .third-section {
-  margin-top: 34px;
-  margin-bottom: 44px;
+  margin-top: 2.125rem;
+  margin-bottom: 2.75rem;
 }
 
 @media only screen and (max-width: 440px) {
@@ -176,15 +193,15 @@
     font-size: 2rem;
   }
   .third-section {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
 
 .section-service, .section-skills, .section-projects {
   font-size: 2.5rem;
   color: #0E76A8;
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
   text-align: center;
 }
 
@@ -264,10 +281,10 @@
 
 .container-3 .serviceBox .content {
   position: relative;
-  padding: 20px;
+  padding: 1.25rem;
   color: #fff;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 6.25rem;
   z-index: 1;
   transform: scale(0);
   transition: 0.5s;
@@ -280,8 +297,8 @@
 }
 
 .container-3 .serviceBox .content h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.313rem;
 }
 
 .container-3 .serviceBox .content p {
@@ -298,7 +315,7 @@
 }
 
 .fourth-section {
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
 }
 
 #my-logo-1 {
@@ -306,7 +323,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 14px;
+  margin-top: 0.875rem;
 }
 
 #my-logo-2 {
@@ -314,11 +331,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 14px;
+  margin-top: 0.875rem;
 }
 
 .card {
-  margin: 12px;
+  margin: 0.75rem;
 }
 
 /****************** FOOTER SECTION ******************/

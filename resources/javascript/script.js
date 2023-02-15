@@ -1,64 +1,67 @@
 /// MAIN SECTION ///
 
-// FIRST SECTION
+// FIRST SECTION //
 
-// TYPE EFFECT
-var TxtType = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 6) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+// TYPING EFFECT
 
-TxtType.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
+class TextType {
+  constructor(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 9) || 1700;
+    this.txt = "";
+    this.isDeleting = false;
+    this.tick();
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  tick() {
+    const i = this.loopNum % this.toRotate.length;
+    const fullTxt = this.toRotate[i];
 
-  var that = this;
-  var delta = 200 - Math.random() * 100;
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-  if (this.isDeleting) { delta /= 2; }
+    this.el.innerHTML = `<span class="wrap">${this.txt}</span>`;
 
-  if (!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
+    let delta = this.period / fullTxt.length;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(() => this.tick(), delta);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const elements = document.getElementsByClassName("typewrite");
+  for (let i = 0; i < elements.length; i++) {
+    const toRotate = elements[i].getAttribute("data-type");
+    const period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+      new TextType(elements[i], JSON.parse(toRotate), period);
+    }
   }
 
-  setTimeout(function() {
-  that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-  }
-  // INJECT CSS //
-  var css = document.createElement("style");
+  // INJECT CSS
+  const css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff }";
   document.body.appendChild(css);
-};
+});
 
 // END TYPE EFFECT
 
