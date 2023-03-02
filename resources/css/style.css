@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --font-family-webpage: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 /*********** NAVBAR SECTION ***********/
@@ -41,8 +47,9 @@
 }
 
  .nav-item {
-  font-weight: bold;
-  font-size: 0.875rem;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.960rem;
 }
 
 /****************** MAIN SECTION ******************/
@@ -60,6 +67,7 @@
 }
 
 .my-title {
+  font-family: var(--font-family-webpage);
   font-size: 4.5rem;
   animation: fadeIn 7s;
 }
@@ -90,6 +98,7 @@
 }
 
 .typewrite {
+  font-family: var(--font-family-webpage);
   color: white;
   background-color: #0e77a892;
   border-radius: 10px;
@@ -156,6 +165,8 @@
 }
 
 .about-me-1 {
+  font-family: var(--font-family-webpage);
+  font-weight: 600;
   font-size: 2.5rem;
   color: #0E76A8;
   margin-bottom: 1.5rem;
@@ -170,15 +181,19 @@
 }
 
 .text {
+  font-family: var(--font-family-webpage);
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 600;
   color: rgb(97, 96, 96);
+  letter-spacing: 0.5px;
 }
 
 .hashtag {
+  font-family: var(--font-family-webpage);
   font-size: 0.75rem;
   color: #0E76A8;
   font-weight: bold;
+  letter-spacing: 0.6px;
 }
 
 /********* THIRD SECTION *********/
@@ -199,10 +214,22 @@
 }
 
 .section-service, .section-skills, .section-projects {
+  font-family: var(--font-family-webpage);
+  font-weight: 600;
   font-size: 2.5rem;
   color: #0E76A8;
   margin-bottom: 2.125rem;
   text-align: center;
+}
+
+.service-title {
+  font-family: var(--font-family-webpage);
+  font-weight: 500;
+}
+
+.service-paragraph {
+  font-family: var(--font-family-webpage);
+  font-weight: 300;
 }
 
 .container-3 {
@@ -302,7 +329,6 @@
 }
 
 .container-3 .serviceBox .content p {
-  font-weight: 300;
   line-height: 1.5em;
 }
 
@@ -334,6 +360,16 @@
   margin-top: 0.875rem;
 }
 
+h3.card-title {
+  font-family: var(--font-family-webpage);
+  font-weight: 500;
+  color: rgb(76, 73, 73);
+}
+
+p.card-text {
+  font-family: var(--font-family-webpage);
+}
+
 .card {
   margin: 0.75rem;
 }
@@ -362,4 +398,9 @@ a.btn.text-white.btn-floating.m-1.linkedin {
 
 a.btn.text-white.btn-floating.m-1.github {
   background-color: #333333;
+}
+
+div.footer-text {
+  font-family: var(--font-family-webpage);
+  font-weight: 500;
 }
