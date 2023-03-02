@@ -1,2 +1,3 @@
-# personal-website
-#1 Project as a web dev
+# Black Fury | Personal-website
+#1 project as a web developer <br>
+🌐 Link -- https://blackfury117.github.io
