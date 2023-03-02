@@ -7,6 +7,7 @@ This is my first project as a Frontend Developer <br>
     <li>Bootstrap</li>
     <li>JavaScript</li>
 </ul>
+
 ## Author
 <ul>
 <li>Coded by me</li>
