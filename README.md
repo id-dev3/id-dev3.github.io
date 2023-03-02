@@ -8,5 +8,7 @@ This is my first project as a Frontend Developer <br>
     <li>JavaScript</li>
 </ul>
 ## Author
-Coded by me <br>
+<ul>
+<li>Coded by me</li>
+</ul>
 🌐 Link -- https://blackfury117.github.io
