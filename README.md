@@ -1,12 +1,12 @@
 # Black Fury | Personal-website
 
-![This is an overview of my personal website](./resources/images/Overview%20of%20my%20personal%20website.png)
+![This is an overview of my personal website](./resources/images/overview-of-my-personal-website.png)
 
-![This is an overview of my personal website](./resources/images/Overview%20of%20my%20personal%20website%20(2).png)
+![This is an overview of my personal website](./resources/images/second-overview-of-my-personal-website.png)
 
-![This is an overview of my personal website](./resources/images/Overview%20of%20my%20personal%20website%20(3).gif)
+![This is an overview of my personal website](./resources/images/third-overview-of-my-personal-website.gif)
 
-![This is an overview of my personal website](./resources/images/Overview%20of%20my%20personal%20website%20(4).png)
+![This is an overview of my personal website](./resources/images/fourth-overview-of-my-personal-website.png)
 
 Welcome to my personal website! This is my very first project as a frontend developer, and I'm excited to share it with you. <br>
 
