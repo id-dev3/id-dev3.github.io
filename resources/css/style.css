@@ -174,7 +174,7 @@
 
 .my-photo {
   display: block;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.25rem;
@@ -186,6 +186,12 @@
   font-weight: 600;
   color: rgb(97, 96, 96);
   letter-spacing: 0.5px;
+}
+
+a.my-cv {
+  font-family: var(--font-family-webpage);
+  font-size: 0.875rem;
+  margin-bottom: 0.900rem;
 }
 
 .hashtag {
