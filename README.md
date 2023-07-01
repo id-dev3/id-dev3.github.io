@@ -16,7 +16,7 @@ On the about section, you'll find a brief introduction about me and my journey a
 
 I built this website using HTML, CSS, and JavaScript, and with a help of a popular library named Bootstrap. I learned a lot throughout the development process, and I'm excited to continue improving my skills and creating more projects in the future. <br>
 
-Thank you for visiting <a href="https://blackfury117.github.io/" rel="noopener" target="_blank">my website</a>, and feel free to get in touch with me if you have any questions or feedback.
+Thank you for visiting <a href="https://blackfury117.github.io/" rel="noopener" target="_blank">my website</a>, and feel free to get in touch with me if you have any questions or feedback. <br><br>
 
 ## Built with
 
@@ -25,12 +25,9 @@ Thank you for visiting <a href="https://blackfury117.github.io/" rel="noopener" 
     <li>CSS</li>
     <li>Bootstrap</li>
     <li>JavaScript</li>
-</ul>
+</ul> <br><br>
 
 ## Author
 
-<ul>
-<li>Coded by me</li>
-</ul>
-
-🌐 Link -- https://blackfury117.github.io
+- Website - [Black Fury](https://blackfury117.github.io/)
+- Twitter - [@blackfury117](https://www.twitter.com/blackfury117)
