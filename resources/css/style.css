@@ -350,22 +350,6 @@ a.my-cv {
   margin-bottom: 2.125rem;
 }
 
-#my-logo-1 {
-  width: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.875rem;
-}
-
-#my-logo-2 {
-  width: 88px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.875rem;
-}
-
 h3.card-title {
   font-family: var(--font-family-webpage);
   font-weight: 500;
