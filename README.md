@@ -25,7 +25,7 @@ Thank you for visiting <a href="https://blackfury117.github.io/" rel="noopener" 
     <li>CSS</li>
     <li>Bootstrap</li>
     <li>JavaScript</li>
-</ul> <br><br>
+</ul> <br>
 
 ## Author
 
