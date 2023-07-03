@@ -380,6 +380,11 @@ p.card-text {
   margin: 0.75rem;
 }
 
+.project-tag {
+  font-weight: bold;
+  color: #0E76A8;
+}
+
 /****************** FOOTER SECTION ******************/
 
 a.btn.text-white.btn-floating.m-1.facebook {
