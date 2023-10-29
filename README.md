@@ -25,5 +25,5 @@ On the about section, you'll find a brief introduction about me and my journey a
 
 ## Author
 
-- Website - [Black Fury](https://blackfury117.github.io/)
-- Twitter - [@blackfury117](https://www.twitter.com/blackfury117)
+- Website - [Black Fury](https://id-dev3.github.io/)
+- Twitter - [@blackfury117](https://twitter.com/id_dev3)
