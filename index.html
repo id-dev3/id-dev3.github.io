@@ -2,345 +2,279 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my personal portfolio website. I am a web developer and designer with experience in HTML, CSS, Bootstrap, JavaScript, and Wordpress. View my portfolio and contact me for any web development needs.">
-    <meta name="keywords" content="web development, front-end development, web developer, web designer, front-end developer, portfolio, HTML, CSS, SASS, Bootstrap, React, JavaScript, Vue.js, Angular, jQuery, UI/UX design, Responsive design, web performance, mobile-friendly, SEO, Semantic HTML, Material design, Wordpress, PrestaShop, Wix">
-    <title>Idrissa Diallo • Jr FrontEnd Developer</title>
-    <link rel="stylesheet" href="./resources/css/style.css">
-    <link rel="icon" href="./resources/images/My_Logo.png">
+    <meta name="description" content="Welcome to my personal portfolio website. I am a web developer and designer with experience in HTML, CSS, Bootstrap, Tailwind, JavaScript, PrestaShop and Wordpress. View my portfolio and contact me for any web development needs.">
+    <meta name="keywords" content="web development, frontend development, web developer, web designer, frontend developer, portfolio, HTML, CSS, SASS, SCSS, Bootstrap, Tailwind, React, JavaScript, Vue.js, Angular, jQuery, UI/UX design, Responsive design, web performance, mobile-friendly, SEO, Semantic HTML, Material design, Wordpress, PrestaShop, Wix">
+
+    <title>Idrissa Diallo • Jr Frontend Developer</title>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!---------- Google Fonts ---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-------- Font Awesome -------->
     <script src="https://kit.fontawesome.com/1b2a4a8051.js" crossorigin="anonymous"></script>
+
+    <!-------- CSS File -------->
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
+<body>
 
-<body>  
-    
-  <!--------------------- NAVBAR SECTION ---------------------->
+    <!---------------------- HEADER SECTION ---------------------->
+    <header>
 
-  <header>
-    <nav class="navbar bg-white shadow-lg navbar-expand-lg fixed-top navbarScroll">
-      <div class="container">
-        <a class="navbar-brand" href="index.html" rel="home">
-          <img class="my-logo" src="./resources/images/My_Logo.png" title="Idrissa Diallo - Logo" alt="This is the logo of my website">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item home-nav">
-                <a class="nav-link link-secondary" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-secondary" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-secondary" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-secondary" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!---------------------- END NAVBAR SECTION ---------------------->
-
-  <!---------------------- MAIN SECTION ---------------------->
-
-  <main class="main-section">
-
-    <!------- FIRST SECTION ------->
-
-    <section class="bgimage" id="home">
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 my-text text-center">
-              <h1 class="my-title">Hi, I'm Idris !</h1>
-              <h2>
-                <a class="typewrite" data-period="2000" data-type='[ "a Jr Front-End Developer 👨🏿‍💻", "a Tech Enthusiast 💻", " and I love to Develop 👨🏿‍💻" ]'>
-                  <span class="wrap"></span>
+        <!-------- NAVBAR SECTION -------->
+        <nav class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="white" src="./assets/images/my-logo.png" alt="This is my logo">
                 </a>
-              </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="images-container">
-        <img class="skill-icon" src="./resources/images/html.svg" alt="HTML5 icon">
-        <img class="skill-icon" src="./resources/images/css3-alt.svg" alt="CSS3 icon">
-        <img class="skill-icon" src="./resources/images/bootstrap.svg" alt="Bootstrap icon">
-        <img class="skill-icon" src="./resources/images/tailwindcss-svgrepo-com.svg" alt="Tailwind CSS icon">
-        <img class="skill-icon" src="./resources/images/square-js.svg" alt="JavaScript icon">
-        <img class="skill-icon" src="./resources/images/react.svg" alt="React icon">
-      </div>
-
-    </section>
-
-    <!------- END FIRST SECTION ------->
-
-    <!--------- SECOND SECTION --------->
-
-    <section class="second-section scroll-effect" id="about">
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-me">
-            <h2 class="about-me-1">About me... 👨🏿</h2>
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-6">
-            <img class="img-fluid my-photo" src="./resources/images/Idrissa-Diallo-picture.jpg" title="My picture" alt="Idrissa Diallo picture">
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm- col-xs-6">
-            <p class="text">I'm Idrissa Diallo and I'm better known under the pseudonym of Black Fury ✌🏾</p>
-            <p class="text">Well, I was a young literary (yeah, before being a Jr Frontend Developer, I was a full-time literary boy 😅) 
-              who knew nothing about Web Development, but one day, everything changed when I had the chance 
-              to join an E-Commerce start-up. And that's where it all started, where Web Development really began 
-              to interest me 🚀
-            </p>
-            <p class="text">So, at the beginning of 2022, I thought it might be time for me to do a professional reorientation 
-              to become a Jr Frontend Developer and see how a website works, and how to design it, well, I was really 
-              curious to know everything.
-            </p>
-            <p class="text">So, after a long reflection, I signed up at Go My Code to take my first steps in Web Development, 
-              and also in parallel, I was doing some online courses on Udemy and Codecademy.
-            </p>
-            <p class="text">Since then, I have never thrown in the towel, I am constantly learning and staying up-to-date with 
-              the latest technologies, which means I'm a tech enthusiast.</p>
-            <p class="text">And finally, I can say my motto is to learn and work so that my work benefits others, it's the best 
-              reward I can have 🙌🏾
-            </p>
-            <div class="btn-box">
-              <a href="./resources/CV-eng.pdf" class="my-cv theme-btn" role="button">Download my CV</a>
             </div>
-            <!-- <a class="my-cv btn btn-primary btn-sm" href="./resources/CV-eng.pdf" role="button">Download my CV</a> -->
-            <p class="hashtag">#confident #ambitious #hard-working #never-stop-learning #tech-enthusiast</p>
-          </div>
-        </div>
-      </div>
+
+            <div class="nav-links">
+                <a class="links active" href="#home" >Home</a>
+                <a class="links" href="#about" >About</a>
+                <a class="links" href="#services" >Services</a>
+                <a class="links" href="#projects" >Projects</a>
+            </div>
+
+            <div class="dark-light-mode">
+                <img id="icon" src="./assets/images/moon.png" alt="moon icon">
+            </div>
+        </nav>
+
+        <!-------- HERO SECTION -------->
+        <section class="hero-section" id="home">
+            <div class="my-text">
+                <h1 class="my-title">Hi, I'm Idris !</h1>
+
+                <div>
+                    <a class="typewrite" data-period="2000" data-type='[ "a Jr Front-End Developer 👨🏿‍💻", "a Tech Enthusiast 💻", " and I love to Develop 👨🏿‍💻" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <img class="skill-icon" src="./assets/images/html.svg" alt="HTML5 icon">
+                <img class="skill-icon" src="./assets/images/css3-alt.svg" alt="CSS3 icon">
+                <img class="skill-icon" src="./assets/images/bootstrap.svg" alt="Bootstrap icon">
+                <img class="skill-icon" src="./assets/images/tailwindcss-svgrepo-com.svg" alt="Tailwind CSS icon">
+                <img class="skill-icon" src="./assets/images/square-js.svg" alt="JavaScript icon">
+                <img class="skill-icon" src="./assets/images/react.svg" alt="React icon">
+            </div>
+        </section>
+    </header>
+
+    <!---------------------- MAIN SECTION ---------------------->
+    <main>
+        
+        <!-------- FIRST SECTION -------->
+        <section class="first-section" id="about">
+
+            <h2 class="about-me">About me...👨🏿</h2>
+
+            <div class="container-first-section">
+
+                <div class="about-img">
+                    <img src="./assets/images/Idrissa-Diallo-picture.png" alt="Idrissa Diallo picture">
+                </div>
+
+                <div class="about-text">
+                    <p class="text">
+                        My name is Idrissa Diallo, but you can call me Idris ✌🏾. 
+                    </p>
+
+                    <p class="text">
+                        I started my journey as a young literary enthusiast, but everything changed when I joined an E-Commerce startup. 
+                        That's when I discovered my passion for Web Development 🚀.
+                    </p>
+
+                    <p class="text">
+                        In early 2022, I decided to make a career change and become a Jr Frontend Developer. 
+                        I enrolled at Go My Code for formal education and supplemented my learning with online courses from Udemy and Codecademy.
+                    </p>
+
+                    <p class="text text-1">
+                        Since then, I've been on a continuous learning journey, staying updated with the latest technologies. 
+                        I'm a tech enthusiast, and my motto is to learn and work to make a positive impact 🙌🏾.
+                    </p>
+
+                    <a href="./assets/cv/CV-eng.pdf" class="cta" download>
+                        <span>Download my CV</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+
+                    <p class="hashtag">#confident #ambitious #hard-working #never-stop-learning #tech-enthusiast</p>
+                </div>
+            </div>
+        </section>
+
+        <!-------- SECOND SECTION -------->
+        <section class="second-section" id="services">
+
+            <h2 class="services">Services</h2>
       
-    </section>
-
-    <!--------- END SECOND SECTION --------->
-
-    <!--------- THIRD SECTION --------->
-
-    <section class="third-section scroll-effect" id="services">
-
-      <h2 class="section-service">Services</h2>
-
-      <div class="container-3">
-        <div class="serviceBox">
-          <div class="icon icon-1">
-            <i class="fas fa-code"></i>
-          </div>
-          <div class="content">
-            <h2 class="service-title">Development</h2>
-            <p class="service-paragraph">This service will include creating visually appealing and user-friendly websites that are optimized for performance, accessibility, and SEO.</p>
-          </div>
-        </div>
-        <div class="serviceBox">
-          <div class="icon icon-2">
-            <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
-          </div>
-          <div class="content">
-            <h2 class="service-title">Design</h2>
-            <p class="service-paragraph">Your website will be optimized for different devices and screen sizes and will be accessible to all users, including those with disabilities.</p>
-          </div>
-        </div>
-        <div class="serviceBox">
-          <div class="icon icon-3">
-            <i class="fa-sharp fa-solid fa-rocket"></i>
-          </div>
-          <div class="content">
-            <h2 class="service-title">Deployment</h2>
-            <p class="service-paragraph">In summary, this is the process of making your website live and available to the public on the internet. And optimize it to increase its speed and reduce its loading time.</p>
-          </div>
-        </div>
-        <div class="serviceBox">
-          <div class="icon icon-4">
-            <i class="fa-brands fa-searchengin"></i>
-          </div>
-          <div class="content">
-            <h2 class="service-title">SEO</h2>
-            <p class="service-paragraph">
-              When building your website, I'll improve its visibility on search engines and increase its ranking in search results.
-            </p>
-          </div>
-        </div>
-        <div class="serviceBox">
-          <div class="icon icon-5">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <div class="content">
-            <h2 class="service-title">QA</h2>
-            <p class="service-paragraph">
-              This service includes testing, inspections, 
-              and audits to ensure that the website meets the client's requirements and specifications.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!--------- END THIRD SECTION --------->
-
-    <!--------- FOURTH SECTION ✅ --------->
-
-    <section class="fourth-section scroll-effect"  id="projects">
-
-      <h2 class="section-projects">Projects</h2>
-
-      <div class="container-fluid">
-        <div class="row h-100">
-          <div class="col-lg-6 col-md-6 mb-3 mb-sm-0">
-            <div class="card text-center text-bg-light shadow-lg">
-              <img src="./resources/images/overview-of-my-personal-website.png" class="card-img-top" alt="This is a screenshot of my frist project">
-              <div class="card-body">
-                <h4 class="card-title">Personal website</h4>
-                <p class="card-text"> <span class="project-tag">#1</span> This is my first project as a Frontend Developer.</p>
-                <div class="btn-box">
-                  <a href="#" class="theme-btn">Check it out</a>
+            <div class="container-3">
+                <div class="serviceBox">
+                    <div class="icon icon-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="service-title">Development</h3>
+                        <p class="service-paragraph">
+                            This service will include creating visually appealing and user-friendly websites that are
+                            optimized for performance, accessibility, and SEO.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="card-footer text-muted">
-                Dec. 2022 - Jan. 2023 • Dakar, Senegal
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="card text-center text-bg-light shadow-lg">
-              <img src="./resources/images/Phoenix-Consulting-Group-Africa.jpeg" class="card-img-top" alt="This is a screenshot of my second project">
-              <div class="card-body">
-                <h4 class="card-title">Phoenix Consulting Group</h4>
-                <p class="card-text"> <span class="project-tag">#2</span> It was just a personal mission to rebuild this website.</p>
-                <div class="btn-box">
-                  <a href="https://phoenixcga.netlify.app/" target="_blank" rel="noopener" class="theme-btn">Check it out</a>
+            
+                <div class="serviceBox">
+                    <div class="icon icon-2">
+                        <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="service-title">Design</h3>
+                        <p class="service-paragraph">Your website will be optimized for different devices and screen sizes and will
+                            be accessible to all users, including those with disabilities.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="card-footer text-muted">
-                June. 2023 - July. 2023 • Dakar, Senegal
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-4 col-md-6">
-            <div class="card text-center text-bg-light shadow-lg">
-              <img src="./resources/images/Screenshot-of-my-design.png" class="card-img-top" alt="This is a screenshot of my third project">
-              <div class="card-body">
-                <h4 class="card-title">Fylo landing page</h4>
-                <p class="card-text"> <span class="project-tag">#3</span> Here you have my third project, a challenge from Frontend Mentor</p>
-                <div class="btn-box">
-                  <a href="https://blackfury117.github.io/Fylo-landing-page-with-two-column-layout/" target="_blank" rel="noopener" class="theme-btn">Check it out</a>
+
+                <div class="serviceBox">
+                    <div class="icon icon-3">
+                        <i class="fa-sharp fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="service-title">Deployment</h3>
+                        <p class="service-paragraph">In summary, this is the process of making your website live and available to
+                            the public on the internet. And optimize it to increase its speed and reduce its loading time.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="card-footer text-muted">
-                May. 2023 - June. 2023 • Dakar, Senegal
-              </div>
+
+                <div class="serviceBox">
+                    <div class="icon icon-4">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="service-title">SEO</h3>
+                        <p class="service-paragraph">
+                            When building your website, I'll improve its visibility on search engines and increase its ranking in
+                            search results.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="serviceBox">
+                    <div class="icon icon-5">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="service-title">QA</h3>
+                        <p class="service-paragraph">
+                            This service includes testing, inspections,
+                            and audits to ensure that the website meets the client's requirements and specifications.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div> -->
+        </section>
+
+        <!-------- THIRD SECTION -------->
+        <section class="third-section" id="projects">
+            <h2 class="projects">Projects</h2>
+
+            <div class="third-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/screenshot-of-my-work.png" alt="Image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Personal website</h3>
+                        <p class="card-description">
+                            <span>#1 </span>
+                            This card represents my very first project as a Jr Frontend Dev. <br>
+                            It marks the beginning of my journey in web development and design.
+                        </p>
+                        <a class="card-button" href="#" rel="noopener">
+                            <button class="learn-more" type="button">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Check out</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/screenshot-of-my-work-2.png" alt="Image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Phoenix Consulting Group</h3>
+                        <p class="card-description">
+                            <span>#2</span>
+                            This card represents my personal project to modernize and enhance an outdated website, 
+                            focusing on improving the user experience.
+                        </p>
+                        <a class="card-button" href="https://phoenixcga.netlify.app/" target="_blank" rel="noopener">
+                            <button class="learn-more" type="button">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Check out</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                          
+        </section>
+
+        <!-------- FOURTH SECTION -------->
+        <section class="fourth-section">
+            <div class="wrapper">
+                <a class="icon facebook" href="https://www.facebook.com/id.dev3/" target="_blank" rel="noopener">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                </a>
+                <a class="icon twitter" href="https://twitter.com/id_dev3" target="_blank" rel="noopener">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fa-brands fa-x-twitter"></i></span>
+                </a>
+                <a class="icon instagram" href="https://www.instagram.com/id_dev3/" target="_blank" rel="noopener">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </a>
+                <a class="icon github" href="https://github.com/id-dev3" target="_blank" rel="noopener">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fa-brands fa-github"></i></span>
+                </a>
+                <a class="icon gmail" href="mailto:id.diallo117@gmail.com" target="_blank" rel="noopener">
+                    <span class="tooltip">Gmail</span>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                </a>
+                <a class="icon linkedin" href="https://linkedin.com/in/id-diallo" target="_blank" rel="noopener">
+                    <span class="tooltip">LinkedIn</span>
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!---------------------- FOOTER SECTION ---------------------->
+    <footer>
+        <div class="footer-section">
+            <p>© idDev 2023 - All Rights Reserved.</p>
         </div>
-      </div>
-
-    </section>
-
-    <!--------- END FOURTH SECTION --------->
-
-  </main>
-
-  <!---------------------- END MAIN SECTION ---------------------->
-
-  <!---------------------- FOOTER SECTION ---------------------->
-
-  <footer class="bg-dark-subtle text-center text-white">
+    </footer>
     
-    <div class="container p-4 pb-0">
-      <div class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn text-white btn-floating m-1 facebook"
-          href="https://www.facebook.com/id.dev3/"
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="Facebook icon"
-          ><i class="fab fa-facebook-f"></i>
-        </a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn text-white btn-floating m-1 twitter"
-          href="https://twitter.com/id_dev3"
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="Twitter icon"
-          ><i class="fab fa-twitter"></i>
-        </a>
-  
-        <!-- Google -->
-        <a
-          class="btn text-white btn-floating m-1 google"
-          href="mailto:id.diallo117@gmail.com" 
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="Google icon"
-          ><i class="fab fa-google"></i>
-        </a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn text-white btn-floating m-1 instagram"
-          href="https://www.instagram.com/id_dev3/"
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="Instagram icon"
-          ><i class="fab fa-instagram"></i>
-        </a>
-  
-        <!-- Linkedin -->
-        <a
-          class="btn text-white btn-floating m-1 linkedin"
-          href="https://www.linkedin.com/in/id-dev3/"
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="LinkedIn icon"
-          ><i class="fab fa-linkedin-in"></i>
-        </a>
-        <!-- Github -->
-        <a
-          class="btn text-white btn-floating m-1 github"
-          href="https://github.com/id-dev3"
-          target="_blank"
-          rel="noopener noreferrer"
-          role="button"
-          title="GitHub icon"
-          ><i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-dark footer-text">
-      © Black Fury 2023 - All Rights Reserved.
-    </div>
-    
-  
-  </footer>
-
-  <!---------------------- END FOOTER SECTION ---------------------->
-
-  <script src="./resources/javascript/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

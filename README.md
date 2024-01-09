@@ -1,29 +1,22 @@
 # Black Fury | Personal-website
 
-![This is an overview of my personal website](./resources/images/overview-of-my-personal-website.png)
-
-![This is an overview of my personal website](./resources/images/second-overview-of-my-personal-website.png)
-
-![This is an overview of my personal website](./resources/images/third-overview-of-my-personal-website.gif)
-
-![This is an overview of my personal website](./resources/images/fourth-overview-of-my-personal-website.png)
+![This is an overview of my personal website](./assets/design/design-0.png)
 
 Welcome to my personal website and this is my very first project as a Front-End Developer. <br>
 
 My website is a showcase of my skills and projects as a developer. It features a modern and clean design, with easy navigation and a responsive layout that works well on all devices. <br>
 
-On the about section, you'll find a brief introduction about me and my journey as a developer, as well as links to my social media profiles and projects. <br><br>
+On the about section, you'll find a brief introduction about me and my journey as a developer, as well as links to my social media profiles and projects. <br>
 
 ## Built with
 
 <ul>
     <li>HTML</li>
-    <li>CSS</li>
-    <li>Bootstrap</li>
+    <li>SCSS</li>
     <li>JavaScript</li>
-</ul> <br>
+</ul>
 
 ## Author
 
-- Website - [Black Fury](https://id-dev3.github.io/)
-- Twitter - [@blackfury117](https://twitter.com/id_dev3)
+- Website - [idDev3](https://id-dev3.github.io/)
+- Twitter - [@id_dev3](https://twitter.com/id_dev3)
