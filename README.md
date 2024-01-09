@@ -1,4 +1,4 @@
-# Black Fury | Personal-website
+# idDev | Personal-website
 
 ![This is an overview of my personal website](./assets/design/design-0.png)
 
