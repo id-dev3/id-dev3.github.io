@@ -36,9 +36,6 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        // height: 100vh;
-        // margin: 0;
-        // overflow: hidden;
 
         .card{
             display: flex;
@@ -134,16 +131,10 @@ body{
     }
 
     footer{
-        // text-align: center;
-        // position: relative;
         position: absolute;
-            bottom: 0;
-            // left: 50%;
-            // right: 50%;
+        bottom: 0;
 
         .footer-section{
-            
-            // margin: auto;
             p{
                 color: $card-color;
                 font-weight: 600;
